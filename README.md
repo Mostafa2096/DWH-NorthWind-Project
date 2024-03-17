@@ -117,3 +117,35 @@ So, strap in and get ready for an exhilarating journey through the data realms, 
 These questions guide our exploration of the data, aiming to uncover valuable insights that inform strategic decisions and drive business growth.
 
 ![Analysis Power BI Dashboard](https://github.com/Mostafa2096/DWH-NorthWind-Project/assets/106194954/1adc899c-7b8a-496a-8a3b-e0555e9cfc16)
+
+
+## 📈 Indexes
+
+1. **Bitmap Index on City Column in DimCustomer Table**
+   - A bitmap index is chosen for the City column in the DimCustomer table due to its high cardinality nature. Cities often have numerous distinct values, making them suitable candidates for a bitmap index. This index type efficiently handles queries involving city-based filters or aggregations, such as counting customers by city, retrieving customers from specific cities, or analyzing customer distribution across different cities. By using a bitmap index, the database system can optimize query performance for city-related analytics and improve overall response times.
+
+2. **Bitmap Index on Category Column in DimProduct Table**
+   - Similar to the City column, the Category column in the DimProduct table is also expected to have high cardinality. Products are typically classified into various categories, resulting in a wide range of distinct category values. Utilizing a bitmap index on the Category column enables quick retrieval and analysis of products based on their categories. This index type is particularly beneficial for category-based reporting, analysis, and filtering operations. For example, it facilitates tasks such as analyzing sales performance by category, identifying top-selling categories, or comparing sales trends across different product categories.
+
+3. **Hash Index on ProductName Column in DimProduct Table**
+   - The ProductName column in the DimProduct table is often queried for exact matches, such as when users search for specific products by name. In such scenarios, a hash index on the ProductName column provides fast lookup performance for queries that require exact matching of product names. Hash indexes excel in handling equality searches, making them well-suited for this type of query pattern. By using a hash index, the database system can efficiently locate and retrieve products based on their names, enhancing user experience and query responsiveness.
+
+4. **Default B-Tree Indexes on FactOrder Table Columns**
+   - Several columns in the FactOrder table, including CustomerKey, EmployeeKey, PromotionKey, ShipperKey, and others, are indexed using default B-tree indexes. B-tree indexes are versatile and efficient for a wide range of queries, including range queries, equality searches, and sorting operations. These indexes enhance query performance for various order-related analytics, such as analyzing customer orders, evaluating employee performance, assessing promotional effectiveness, and optimizing shipping processes. By utilizing default B-tree indexes on these columns, the database system can handle diverse query requirements effectively and improve overall system performance.
+
+5. **Default B-Tree Index on SupplierKey Column in DimProduct Table**
+   - The SupplierKey column in the DimProduct table is indexed using a default B-tree index to optimize queries related to product suppliers. This index facilitates fast retrieval of products associated with specific suppliers, supplier performance analysis, supplier-related reporting, and supplier relationship management. By using a default B-tree index on the SupplierKey column, the database system can efficiently handle supplier-related queries and improve overall data retrieval performance.
+
+6. **Default B-Tree Indexes on DimEmployee Table Columns**
+   - Several columns in the DimEmployee table, including ManagerKey, and EffectiveToDateKey, are indexed using default B-tree indexes. These indexes support efficient employee-related queries, including hierarchical queries, tenure analysis, historical data retrieval, and workforce planning. By leveraging default B-tree indexes on these columns, the database system can optimize employee-related analytics, improve query performance, and facilitate data-driven decision-making in human resources management.
+
+7. **Default B-Tree Indexes on DimProductPriceMini Table Columns**
+   - The unitcost and unitprice columns in the DimProductPriceMini table are indexed using default B-tree indexes. These indexes aid in price analysis, cost comparisons, price trend analysis, and pricing strategy optimization for products over time. By using default B-tree indexes on these columns, the database system can efficiently handle price-related queries, support pricing decision-making processes, and improve overall data analysis capabilities.
+
+###Performance Comparison:
+
+![image](https://github.com/Mostafa2096/DWH-NorthWind-Project/assets/106194954/b16c550d-752d-4530-a7cf-65c733e3c690)
+
+
+Note:
+The details of the queries are in the queries pdf file.
