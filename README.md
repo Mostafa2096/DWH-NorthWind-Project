@@ -1,5 +1,4 @@
-# DWH-NorthWind-Project
-# Project Amusement Park 🎢🎡🎠
+# DWH-NorthWind-Project 🎢🎡🎠
 
 Welcome to our Data Warehouse (DWH) project! Below, you'll find a thrilling journey through the steps we've taken, complete with amusing icons to guide you along the way.
 
@@ -91,3 +90,30 @@ Navigate the channels of commerce, where payment methods and sales channels inte
 - From shipping durations to profits earned, every metric paints a vivid picture of our adventures.
 
 So, strap in and get ready for an exhilarating journey through the data realms, where insights await at every turn! 🎢✨
+
+
+## Data Warehouse Modeling
+
+In our Data Warehouse Modeling, we adopted the snowflake schema to establish relationships between the dimension tables.
+
+So, strap in and get ready for an exhilarating journey through the data realms, where insights await at every turn! 🎢✨
+
+![Model](https://github.com/Mostafa2096/DWH-NorthWind-Project/assets/106194954/91c0edbf-8e1d-4028-8a0e-b47431b2ce93)
+
+## 📊 Business Questions & Power BI Dashboard
+
+1. **Does order fulfillment speed (early vs. late deliveries) influence return rates among returned items?**
+2. **How do Duels (Managers and their Employees (direct reports)) compare in terms of total profit generated and profit per day?**
+3. **In each city we operate in, which product categories are the most profitable?**
+4. **What are the preferred payment methods and sales channels?**
+5. **In each city we operate in, what are the top 3 most frequently returned products?**
+6. **Who are the top 5 customers, based on the total amount spent, in every city where we conduct business?**
+7. **What Is The Impact Of Discounts On Profitability? (Profit With Vs. Without Discounts)**
+8. **Which suppliers are the most valuable in terms of product variety?**
+9. **Which suppliers are the most valuable in terms of overall profitability?**
+10. **Which products are the most profitable during holidays based on quantity sold, total sales price, and total profit?**
+11. **Which suppliers have the highest number of returned products?**
+
+These questions guide our exploration of the data, aiming to uncover valuable insights that inform strategic decisions and drive business growth.
+
+![Analysis Power BI Dashboard](https://github.com/Mostafa2096/DWH-NorthWind-Project/assets/106194954/1adc899c-7b8a-496a-8a3b-e0555e9cfc16)
