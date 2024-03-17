@@ -142,7 +142,7 @@ These questions guide our exploration of the data, aiming to uncover valuable in
 7. **Default B-Tree Indexes on DimProductPriceMini Table Columns**
    - The unitcost and unitprice columns in the DimProductPriceMini table are indexed using default B-tree indexes. These indexes aid in price analysis, cost comparisons, price trend analysis, and pricing strategy optimization for products over time. By using default B-tree indexes on these columns, the database system can efficiently handle price-related queries, support pricing decision-making processes, and improve overall data analysis capabilities.
 
-###Performance Comparison:
+### Performance Comparison:
 
 ![image](https://github.com/Mostafa2096/DWH-NorthWind-Project/assets/106194954/b16c550d-752d-4530-a7cf-65c733e3c690)
 
